@@ -31,11 +31,21 @@ class MainActivity : AppCompatActivity() {
             //editText에 입력된 내용을 받아와서(임시저장) 문구 반영
             val inputMessage = msgEdit.text.toString()
 
-            //문구 반영
-            copyResultTxt.text = inputMessage
+            // 입력한 내용이 5글자가 안된다면, Toast 5자 이상 입력하라고 안내.
+            // 5자 이상이면, 문구 반영
 
+            if(inputMessage.length < 5) {
+                Toast.makeText(this, "5자 이상 입력하세요.", Toast.LENGTH_SHORT).show()
+            }
+            // 만약 5초과 10미만 이면 Log로 10글자 안된다.
+            else if(inputMessage.length < 10) {
+                Log.d("입력 글자 수", "5글자 이상이면서 10자 초과는 안됩니다.")
+            }
+            else {
+                //문구 반영
+                copyResultTxt.text = inputMessage
 
+            }
         }
-
     }
 }
