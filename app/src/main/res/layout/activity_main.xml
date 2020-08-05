@@ -21,17 +21,20 @@
         android:text="Click Me2!"/>
 
     <EditText
+        android:id="@+id/msgEdit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="아무 문장이나 한줄로 입력하세요"
         android:singleLine="true" />
 
     <Button
+        android:id="@+id/copyBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="복사하기"/>
 
     <TextView
+        android:id="@+id/copyResultTxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
