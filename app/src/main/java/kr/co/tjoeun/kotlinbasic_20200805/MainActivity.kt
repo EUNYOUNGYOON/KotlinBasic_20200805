@@ -17,18 +17,13 @@ class MainActivity : AppCompatActivity() {
 
             // 이 중괄호 코드가 clickMe 버튼이 눌리면 실행
             Log.d("버튼클릭", "ClickMeButton Push!")
-
             Toast.makeText(this, "Click Me 버튼 눌림", Toast.LENGTH_SHORT).show()
-
-
-
-
         }
 
         // 두번째 버튼 클릭
         secondBtn.setOnClickListener {
-
             Log.d("버튼눌림", "두번째 버튼 눌림!!")
+            Toast.makeText(this, "두번째 버튼 눌림!", Toast.LENGTH_SHORT).show()
         }
 
     }
