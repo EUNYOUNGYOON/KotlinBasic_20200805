@@ -24,7 +24,7 @@
         android:id="@+id/msgEdit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="아무 문장이나 한줄로 입력하세요"
+        android:hint="아무 문장이나 한줄로 입력하세요"
         android:singleLine="true" />
 
     <Button
